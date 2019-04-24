@@ -8,15 +8,15 @@
 
 import Foundation
 
-var personArr = Array<Person>()
-var houseArr = Array<House>()
-
-var p1PassCount = 0
-var p2PassCount = 0
-var priceLevel = 1
-
 class GC{
     static let share = GC()
+
+    private var personArr = Array<Person>()
+    private var houseArr = Array<House>()
+
+    var p1PassCount = 0
+    var p2PassCount = 0
+    var priceLevel = 1
 
     func initial(){
 
@@ -25,7 +25,7 @@ class GC{
         priceLevel = 1
         p1PassCount = 0
         p2PassCount = 0
-        
+
         for _ in 0...2{
             let p = Person()
             p.owerCash = 400
@@ -44,9 +44,9 @@ class GC{
     }
 
     func getForwardNum() ->Int{
-        let rand1 = arc4random_uniform(6) + 1
-        let rand2 = arc4random_uniform(6) + 1
-        let result = Int(rand1 + rand2)
+        let rand1 = Int.random(in: 1...6)
+        let rand2 = Int.random(in: 1...6)
+        let result = rand1 + rand2
         return result
     }
 
@@ -119,7 +119,26 @@ class GC{
         return personArr[p].owerCash <= 0 ? true : false
     }
 
+    func getOwnerLand(p:Int) -> Array<Int>?{
+        guard p >= 0 && p <= personArr.count - 1 else{
+            return nil
+        }
+        return personArr[p].owerLand
+    }
 
+    func getCash(p:Int) -> Int?{
+        guard p >= 0 && p <= personArr.count - 1 else{
+            return nil
+        }
+        return personArr[p].owerCash
+    }
+
+    func getHouse(position:Int) -> House?{
+        guard position >= 0 && position <= houseArr.count - 1 else{
+            return nil
+        }
+        return houseArr[position]
+    }
 
 }
 

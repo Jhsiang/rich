@@ -17,6 +17,7 @@
 		0F02C67121B67995001DC522 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02C67021B67995001DC522 /* House.swift */; };
 		0F02C67321B679A1001DC522 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02C67221B679A1001DC522 /* Person.swift */; };
 		0F02C67521B68169001DC522 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02C67421B68169001DC522 /* Setting.swift */; };
+		0F18E56D21B8C67200A80152 /* Chance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F18E56C21B8C67200A80152 /* Chance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0F02C67021B67995001DC522 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		0F02C67221B679A1001DC522 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0F02C67421B68169001DC522 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		0F18E56C21B8C67200A80152 /* Chance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				0F02C64421B67982001DC522 /* ViewController.swift */,
 				0F02C67021B67995001DC522 /* House.swift */,
 				0F02C67221B679A1001DC522 /* Person.swift */,
+				0F18E56C21B8C67200A80152 /* Chance.swift */,
 				0F02C67421B68169001DC522 /* Setting.swift */,
 				0F02C64621B67982001DC522 /* Main.storyboard */,
 				0F02C64921B67984001DC522 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				0F02C67521B68169001DC522 /* Setting.swift in Sources */,
 				0F02C64521B67982001DC522 /* ViewController.swift in Sources */,
 				0F02C67121B67995001DC522 /* House.swift in Sources */,
+				0F18E56D21B8C67200A80152 /* Chance.swift in Sources */,
 				0F02C67321B679A1001DC522 /* Person.swift in Sources */,
 				0F02C64321B67982001DC522 /* AppDelegate.swift in Sources */,
 			);
@@ -447,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U79KUH842;
 				INFOPLIST_FILE = rich/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U79KUH842;
 				INFOPLIST_FILE = rich/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
